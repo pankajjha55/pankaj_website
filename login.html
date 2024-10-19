@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>About Us | LearnX Academy</title>
+  <title>Login | LearnX Academy</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,8 +20,19 @@
   </header>
 
   <main>
-    <h1>About LearnX Academy</h1>
-    <p>LearnX Academy is an online learning platform offering top-quality courses taught by industry experts. Whether you're interested in coding, data science, or design, we have a course for you.</p>
+    <section class="form-container">
+      <h1>Login to Your Account</h1>
+      <form action="#" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <p>Don't have an account? <a href="signup.html">Signup here</a>.</p>
+    </section>
   </main>
 
   <footer>
