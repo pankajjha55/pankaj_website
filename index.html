@@ -1,47 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>LearnX Academy</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<!-- Firebase Configuration -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
 
-  <section class="hero">
-    <h1>Welcome to LearnX Academy</h1>
-    <p>Start learning with top-notch courses from industry experts</p>
-    <a href="courses.html" class="btn">Browse Courses</a>
-  </section>
-
-  <section class="features">
-    <div class="feature">
-      <h2>Expert Instructors</h2>
-      <p>Learn from industry professionals with years of experience.</p>
-    </div>
-    <div class="feature">
-      <h2>Flexible Learning</h2>
-      <p>Study anytime, anywhere at your own pace with our online courses.</p>
-    </div>
-    <div class="feature">
-      <h2>Certified Courses</h2>
-      <p>Receive certificates for completing each course to showcase your skills.</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 LearnX Academy | <a href="contact.html">Contact Us</a></p>
-  </footer>
-</body>
-</html>
+<script>
+  // Your Firebase configuration
+  const firebaseConfig = {
+    apiKey: "your-api-key",
+    authDomain: "your-project-id.firebaseapp.com",
+    projectId: "your-project-id",
+    storageBucket: "your-project-id.appspot.com",
+    messagingSenderId: "your-messaging-sender-id",
+    appId: "your-app-id"
+  };
+  
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
